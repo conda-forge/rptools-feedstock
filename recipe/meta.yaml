@@ -1,5 +1,5 @@
 {% set name = "rptools" %}
-{% set version = "5.8.2" %}
+{% set version = "5.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/rptools/archive/{{ version }}.tar.gz
-  sha256: 0d53dded123cc2ec184ad598b6b3ad7a86ebf346bec7def821ed6a7752e6c2f6
+  sha256: 19235546533d41ebb189e86ce6e3ab11679dc9b2da077520622e14f8520e1cdb
 
 build:
   number: 0
@@ -59,7 +59,7 @@ test:
 
 about:
   home: https://github.com/brsynth/rptools
-  summary: "Suite of tools that work on rpSBML data"
+  summary: Suite of tools that work on rpSBML data
   license: MIT
   license_file: LICENSE
 
