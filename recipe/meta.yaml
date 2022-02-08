@@ -10,7 +10,7 @@ source:
   sha256: 8dec1bc8c3f9a2faa446cda3ac122b27dcaf6b12e1131ffb76f49b43d45ae012
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install -vv .
 
@@ -42,6 +42,7 @@ requirements:
     - h5py
     - xgboost
     - beautifulsoup4
+    - sqlalchemy =1.4.31
 
 test:
   source_files:
