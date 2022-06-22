@@ -21,17 +21,12 @@ requirements:
   run:
     - python >3.6
     - brs_utils
-    - requests
-    - urllib3
     - cobra
-    - timeout-decorator
     - rdkit
     - python-libsbml
     - numpy
     - pandas
     - scipy
-    - equilibrator-api
-    - equilibrator-pathway
     - openbabel
     - colored
     - networkx >=2.5
