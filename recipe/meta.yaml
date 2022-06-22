@@ -27,6 +27,7 @@ requirements:
     - numpy
     - pandas
     - scipy
+    - equilibrator-api
     - openbabel
     - colored
     - networkx >=2.5
