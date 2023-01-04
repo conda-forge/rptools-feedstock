@@ -24,7 +24,7 @@ requirements:
     - cobra
     - rdkit
     - python-libsbml
-    - numpy
+    - numpy <=1.22.4
     - pandas
     - scipy
     - equilibrator-api
