@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/rptools/archive/{{ version }}.tar.gz
-  sha256: 58a8654d348607b720585a20996dd19c757054be2bab49774475ed714631649a
+  sha256: 4cdf498fed9f0a5cde4cf776b1964e47dda3682fad9349a77e4218301b44ca6b
 
 build:
   number: 0
