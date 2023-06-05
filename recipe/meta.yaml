@@ -10,7 +10,7 @@ source:
   sha256: 5b7c25df1bd3f5b1cf26db22014f474cfb31c1aa0a15a842d956bb6371011bd6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install -vv .
 
@@ -32,7 +32,7 @@ requirements:
     - colored
     - networkx >=2.5
     - filetype
-    - rr_cache
+    - rr_cache >=3.1.1
     - rxn_rebuild
     - chemlite
     - h5py
