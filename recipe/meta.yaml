@@ -10,16 +10,16 @@ source:
   sha256: f2c9d13e16b4d3229e8ca50c0a80f1085590bcfb8e0595bacedb28a7caee2e24
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install -vv .
 
 requirements:
   host:
-    - python >3.6
+    - python >=3.9
     - pip
   run:
-    - python >3.6
+    - python >=3.9
     - brs_utils
     - cobra
     - rdkit
