@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python <=3.11
+    - python >=3.7,<=3.10
     - pip
   run:
-    - python <=3.11
+    - python >=3.7,<=3.10
     - brs_utils
     - cobra >=0.26.3
     - timeout-decorator
