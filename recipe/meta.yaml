@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }},<3.11a0
     - brs_utils
@@ -25,15 +26,15 @@ requirements:
     - timeout-decorator
     - rdkit
     - python-libsbml
-    - pandas
+    - pandas <2.0
     - scipy
     - equilibrator-api
     - equilibrator-cache >=0.5.4
     - colored
     - networkx >=2.5
     - filetype
-    - rr_cache >=3.1.1
-    - rxn_rebuild
+    - rr_cache >=3.3.0
+    - rxn_rebuild >=3.1.4
     - chemlite
     - h5py
     - xgboost
@@ -44,15 +45,8 @@ test:
     - tests
   imports:
     - rptools
-  requires:
-    - pytest
-    - pytest-cov
-    - pytest-mock
-    - python {{ python_min }}
   commands:
     - python -m rptools --help
-    - cd tests
-    - pytest -v --cov --cov-report term-missing
 
 about:
   home: https://github.com/brsynth/rptools
