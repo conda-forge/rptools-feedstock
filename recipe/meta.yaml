@@ -37,7 +37,7 @@ requirements:
     - rxn_rebuild >=3.1.4
     - chemlite
     - h5py
-    - xgboost
+    - xgboost <=3.0.2
     - bs4
 
 test:
