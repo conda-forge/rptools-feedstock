@@ -1,5 +1,5 @@
 {% set name = "rptools" %}
-{% set version = "6.8.0" %}
+{% set version = "6.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/rptools/archive/{{ version }}.tar.gz
-  sha256: 598ff02eef2d6c30bc90e379c18d11acdf16e074d0bd7d3c4ded75b3d778f07a
+  sha256: 9e033e07d751436b538780088bc13312bc1a015f757bf982e7fcfb679532a1a3
 
 build:
   number: 0
