@@ -1,5 +1,5 @@
 {% set name = "rptools" %}
-{% set version = "6.8.1" %}
+{% set version = "6.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/rptools/archive/{{ version }}.tar.gz
-  sha256: 9e033e07d751436b538780088bc13312bc1a015f757bf982e7fcfb679532a1a3
+  sha256: 4d9fe99c16cc2e42f07a78b6093df28a97b5b22f653521ab03bcd59fe141e50f
 
 build:
   number: 0
@@ -21,11 +21,12 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }},<3.11a0
-    - brs_utils
-    - cobra >=0.26.3
+    - brs_utils <1.26.0
+    - cobra >=0.26.3 
     - timeout-decorator
     - rdkit
     - python-libsbml
+    - numpy <1.25
     - pandas <2.0
     - scipy
     - equilibrator-api
@@ -33,8 +34,8 @@ requirements:
     - colored
     - networkx >=2.5
     - filetype
-    - rr_cache >=3.4.0
-    - rxn_rebuild >=3.1.4
+    - rr_cache >=3.4.0,<=3.5.0 
+    - rxn_rebuild =3.1.5
     - chemlite
     - h5py
     - xgboost <=3.0.2
@@ -58,3 +59,4 @@ extra:
   recipe-maintainers:
     - tduigou
     - breakthewall
+    - ramez17khaled
